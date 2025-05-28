@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Página web de logística Stephens, creada por Manrique Stephens. Explora hobbies, enlaces útiles y más.">
+    <title>Logística Stephens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #2825d3;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header,
+        footer {
+            background-color: #ce4eb9;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            margin: 20px 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        a:link,
+        a:visited {
+            background-color: #c84756;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover,
+        a:active {
+            background-color: red;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a "Logística Stephens"</h1>
+    </header>
+
+    <div class="overlay" id="overlay" style="display: none;">
+        <div class="popup">
+            <button class="close" id="close">&times;</button>
+            <img src="logo logistica stephens 2.jpg" alt="Imagen Emergente">
+        </div>
+        <div class="overlay__body">
+            <p>Este logo está superpuesto al contenido de la página.</p>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar la superposición
+        document.getElementById('overlay').style.display = 'block';
+
+        // Cerrar la superposición cuando se haga clic en el botón de cerrar
+        document.getElementById('close').addEventListener('click', function () {
+            document.getElementById('overlay').style.display = 'none';
+        });
+    </script>
+
+    <main>
+        <section>
+            <h2>Mis Hobbies</h2>
+            <ol>
+                <li>Disfrutar de la LÓGISTICA em el Transporte de Carga Pesada</li>
+                <li><b>Crear páginas Web con Esteban Mora</b></li>
+                <li><em>Hacer Teatro en el PIAM, con Sociodrama 2</em></li>
+                <li><mark>Jugar Baloncesto con el Liceo de Costa Rica</mark></li>
+                <li><i>Ejercicios: Caminar,andar en bicicleta y Gimanacio en</i></li>
+                <li><ins>Participar en cursos: presenciales y virtuales en AGECO</ins></li>
+                <li><del>Nadar en agua fría</del> mejor tibia.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Nuestro proovedor de Software Logisitico</h2>
+            <img src="imagenes/Creatica.png" alt="Software para Transportista" width="104" height="142">
+            <a href="https://www.creaticasoftware.com/index.aspx" target="_blank">Enlace a Software Creatica</a>
+        </section>
+
+        <section>
+            <h2>Enlaces de Emprsas Recomendadas, toca el enlace</h2>
+            <a href="https://www.bncr.fi.cr/" target="_blank">Banco Nacional</a>
+            <a href="https://www.montacargasodio.com/blog/cabezal" target="_blank">Montacargas Odio</a>
+            <a href="https://www.transup.com/informacion" target="_blank">Transup</a>
+            <a href="https://www.crowley.com/" target="_blank">Crowley</a>
+            <a href="https://setrana.com/" target="_blank">Setrana</a>
+        </section>
+
+        <section>
+            <h2>Empresas Asociadas y Recomendadas</h2>
+            <blockquote cite="https://www.irrlogistics.com/#quienes-somos">
+                <p>"IRR LOGISTICS S.A." Empresa asociada para realizar viajes internos. Consullte su enlace : <a
+                        href="https://irrlogistics.com/" target="_blank">IRR LOGISTICS S.A.</a></p>
+            </blockquote>
+            <blockquote cite="https://www.gash.co.cr/es/">
+                <p>"TRANSPORTES GASH" Empresa asociada para realizr viajes a Centroamérica. Consulte su enlace: <a
+                        href="https://www.gash.co.cr/es/" target="_blank">Transportes GASH</a></p>
+            </blockquote>
+        </section>
+
+        <body>
+            <h3>Los logos de las Empresas IRR y Gash</h3>
+            <img id="imagen1" src="logo gash.jpeg" width="200" alt="Imagen 1">
+            <img id="imagen2" src="logo IRR.jpeg" width="100" alt="Imagen 2">
+            <br><br>
+            <button onclick="ejecutarFuncion()">Ajustar Imágenes</button>
+
+            <script>
+                // Definimos la función en JavaScript
+                function myImageFunction(img1, img2) {
+                    img2.width = img1.width;
+                    return img2;
+                }
+
+                function ejecutarFuncion() {
+                    // Seleccionamos las imágenes
+                    const imagen1 = document.getElementById("imagen1");
+                    const imagen2 = document.getElementById("imagen2");
+
+                    // Llamamos a la función
+                    myImageFunction(imagen1, imagen2);
+                    alert("Toca y ¡Mira el logo de IRR se ajusta al tamaño del de GASH !");
+                }
+            </script>
+        </body>
+
+        <section>
+            <title>Contactenos</title>
+            <style>
+                h1 {
+
+                    color: rgb(12, 12, 12);
+                    text-align: center;
+                }
+
+                #logo {
+                    text-align: center;
+                }
+
+                .nav {
+                    background-color: #020000;
+                }
+
+                .nav nav {
+                    display: flex;
+                    justify-content: flex-start;
+                    padding: 14px 0;
+                }
+
+                .nav a {
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    padding: 14px 20px;
+                    border-radius: 4px;
+                    transition: background-color 0.3s;
+                }
+
+                .nav a:hover {
+                    background-color: #575757;
+                }
+
+                div {
+                    padding-top: 20px;
+                    padding-right: 30px;
+                    padding-bottom: 20px;
+                    padding-left: 80px;
+                }
+
+                /* unvisited link */
+                a:link {
+                    color: rgb(253, 249, 249);
+                }
+
+                /* visited link */
+                a:visited {
+                    color: rgb(98, 99, 99);
+                }
+
+                /* mouse over link */
+                a:hover {
+                    color: rgb(162, 240, 214);
+                }
+
+                /* selected link */
+                a:active {
+                    color: rgb(173, 238, 211);
+                }
+
+                #footer {
+
+                    background-color: black;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: white;
+                    padding-top: 80px;
+                    padding-right: 30px;
+                    padding-bottom: 80px;
+                    padding-left: 80px;
+                    text-align: center;
+
+
+                }
+
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: auto auto
+                }
+
+                #tamano {
+                    width: 600px;
+                    height: auto;
+                }
+
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    background-color: rgb(248, 246, 246);
+                }
+
+                .formulario {
+                    width: 25%;
+                }
+
+                .imagen {
+                    width: 500px;
+                    height: auto;
+
+
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                form input,
+                form select,
+                form textarea,
+                form button {
+                    margin: 5px 0;
+                }
+
+                .enviar {
+                    width: 50px;
+                    height: auto;
+                    background-color: rgb(3, 3, 3);
+                    color: white;
+                }
+            </style>
+            </head>
+
+            </header>
+            <br />
+            <div class="nav">
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="Videos.html">Videos</a>
+                    <a href="Música.html">Música</a>
+                </nav>
+            </div>
+            <br />
+            <h1>CONTACTENOS al correo "stephensmanri@gmail.com</br> o al teléfono 62602026</h1>
+
+            <div class="container">
+                <div class="formulario">
+                    <form action="mailto:stephensmanri@gmail.com" method="post" enctype="text/plain">
+                        <h2>Llene el siguiente FORMULARIO</h2>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" required>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" required>
+                        <label for="edad">Seleccione un rango de edad:</label>
+                        <select id="edad" name="edad">
+                            <option value="18-25">18-25</option>
+                            <option value="26-30">26-30</option>
+                            <option value="31-40">31-40</option>
+                            <option value="41-50">41-50</option>
+                        </select>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="number" pattern="number">
+                        <textarea name="comment" id="comment" style="resize: none;" rows="10"
+                            cols="50">Mensaje</textarea>
+                        <button class="enviar" type="submit" value="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.123456789012!2d-84.123456789!3d9.987654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e123456789ab%3A0x123456789abcdef!2sCuatro%20Reinas%2C%20Tib%C3%A1s%2C%20Costa%20Rica!5e0!3m2!1ses!2ses!4v1234567890123"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <section>
+                <title>Juega ahora con JavaScript</title>
+                </head>
+
+                <body>
+
+                    <h2>Juega ahora con JavaScript</h2>
+                    <button type="button" onclick="document.getElementById('dateDemo').innerHTML = Date()">
+                        Tocame para ver la fecha y hora de hoy.
+                    </button>
+                    <p id="dateDemo"></p>
+
+                    <h2>Como cambia el contenido</h2>
+                    <p id="contentDemo">Toca ve cambiar su contenido.</p>
+                    <button type="button"
+                        onclick="document.getElementById('contentDemo').innerHTML = 'HOLA, ¿cómo estas?'">
+                        ¡Tócame para cambiar el contenido !
+                    </button>
+
+                    <h2>Mira como cambia atributo</h2>
+                    <p>Magia.</p>
+
+                    <button
+                        onclick="document.getElementById('myImage').src='https://media.tenor.com/IA3BZo901u4AAAAd/light-bulb-go-off.gif'">
+                        ENCIENDE LA LUZ
+                    </button>
+                    <img id="myImage" src="https://media.tenor.com/v1Rr5AUVH_YAAAAj/lampard.gif" style="width:100px"
+                        alt="Light bulb">
+                    <button
+                        onclick="document.getElementById('myImage').src='https://media.tenor.com/v1Rr5AUVH_YAAAAj/lampard.gif'">
+                        APAGA LA LUZ
+                    </button>
+
+                    <h2>Cambiar el estilo de un elemento</h2>
+                    <p id="styleDemo">¿Sí se cambio de tamaño?.</p>
+                    <button type="button" onclick="document.getElementById('styleDemo').style.fontSize='35px'">
+                        ¡Haz clic para cambiar el tamaño del texto!
+                    </button>
+                    <button type="button" onclick="document.getElementById('styleDemo').style.fontSize='initial'">
+                        ¡Haz clic para restablecer el tamaño del texto!
+                    </button>
+
+                    <h2>Se Oculto</h2>
+                    <p id="hideDemo">Se puede ocultar si me tocas.</p>
+                    <button type="button" onclick="toggleVisibility()">
+                        ¡Haz clic para mostrar/ocultar este texto!
+                    </button>
+
+                    <script>
+                        function toggleVisibility() {
+                            const element = document.getElementById('hideDemo');
+                            element.style.display = element.style.display === 'none' ? 'block' : 'none';
+                        }
+                    </script>
+
+            </section>
+
+            <footer id="footer">Manrique Stephens&reg;</footer>
+</body>
+</section>
+</main>
+
+<footer>
+    <p>&copy; Desarrollador Manrique Stephens 2025</p>
+</footer>
+</body>
+
+</html>

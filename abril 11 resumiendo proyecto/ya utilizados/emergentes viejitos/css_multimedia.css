@@ -1,0 +1,16 @@
+.tamano {
+
+    width: 500px;
+    height: auto;
+
+}
+
+#center1 {
+    display: block;
+    margin: 0 auto;
+}
+
+#video_index {
+    max-width: 100%;
+    height: auto;
+}

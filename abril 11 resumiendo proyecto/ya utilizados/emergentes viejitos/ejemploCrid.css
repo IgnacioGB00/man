@@ -1,0 +1,72 @@
+
+.parent {
+    background-color: rgb(94, 94, 94);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 5px;
+    align-content: center;
+    height: 800px;
+    
+    
+}
+    
+.div9 {
+    grid-row: span 2 / span 2;
+}
+
+.div10 {
+    grid-row: span 2 / span 2;
+}
+
+.div11 {
+    grid-row: span 2 / span 2;
+}
+
+.div12 {
+    grid-row: span 2 / span 2;
+}
+
+.div13 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div14 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div15 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div16 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div25 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-row-start: 5;
+}
+
+.div26 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.img_size {
+    width: 200px;
+    height: auto;
+}
+
+#p {
+    text-align: justify;
+    color: white;
+}
+        

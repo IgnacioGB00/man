@@ -1,0 +1,21 @@
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section a {
+    text-decoration: none;
+    color: blue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container a {
+    text-decoration: none;
+    color: blue;
+}
