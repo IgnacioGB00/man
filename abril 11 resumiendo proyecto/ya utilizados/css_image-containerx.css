@@ -1,0 +1,18 @@
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.image-item img {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-item p {
+    text-align: center;
+    margin-top: 5px;
+}
