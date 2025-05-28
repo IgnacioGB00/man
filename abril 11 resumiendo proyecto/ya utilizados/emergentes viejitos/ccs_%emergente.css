@@ -1,6 +1,0 @@
-/* ...existing code... */
-.overlay {
-    transform: scale(2); /* Scale the overlay to 200% */
-    transform-origin: center; /* Ensure scaling happens from the center */
-}
-/* ...existing code... */
