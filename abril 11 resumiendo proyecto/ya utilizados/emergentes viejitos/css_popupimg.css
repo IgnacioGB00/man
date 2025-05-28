@@ -1,0 +1,6 @@
+.popup img {
+    width: 200%; /* Increase the width to 200% */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* ...existing code... */

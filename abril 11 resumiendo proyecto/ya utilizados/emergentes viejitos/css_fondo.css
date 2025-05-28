@@ -1,0 +1,28 @@
+/*.body{
+    background-color: brown;
+}*/
+
+/*.body{
+    background-color: #eeca13 ;
+}*/
+
+/*.body{
+    background-color: rgb(174, 214, 241)  ;
+}*/
+
+/*.body{
+    background-color: hsl(24, 100%, 41%)  ;
+}*/
+
+/*.body{
+    background-image: url(../gif/av7_banner.gif);
+    
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-attachment: fixed;
+}*/
+
+/*.body{
+     background: rgb(252, 251, 251) fixed url(../gif/av7_banner.gif) no-repeat top center;
+    
+}*/

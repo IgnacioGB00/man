@@ -1,0 +1,104 @@
+body {
+    color: rgb(12, 12, 12);
+    text-align: center;
+}
+
+#logo {
+    text-align: center;
+}
+
+.nav {
+    background-color: #020000;
+}
+
+.nav nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 14px 0;
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #575757;
+}
+
+div {
+    padding: 20px 30px 20px 80px;
+}
+
+/* Link styles */
+a:link {
+    color: rgb(253, 249, 249);
+}
+
+a:visited {
+    color: rgb(98, 99, 99);
+}
+
+a:hover {
+    color: rgb(162, 240, 214);
+}
+
+a:active {
+    color: rgb(173, 238, 211);
+}
+
+#footer {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 80px 30px 80px 80px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#tamano {
+    width: 600px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(248, 246, 246);
+}
+
+.formulario {
+    width: 25%;
+}
+
+.imagen {
+    width: 500px;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+    margin: 5px 0;
+}
+
+.enviar {
+    width: 50px;
+    height: auto;
+    background-color: rgb(3, 3, 3);
+    color: white;
+}

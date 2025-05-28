@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Primer JavaScript</title>
+</head>
+<body>
+
+<h2>Mi primer JavaScript</h2>
+<button type="button" onclick="document.getElementById('dateDemo').innerHTML = Date()">
+    Tocame para ver la fecha y hora de hoy.
+</button>
+<p id="dateDemo"></p>
+
+<h2>¿Qué puede hacer JavaScript en HTML?</h2>
+<p id="contentDemo">JavaScript puede cambiar el contenido HTML.</p>
+<button type="button" onclick="document.getElementById('contentDemo').innerHTML = 'HOLA JavaScript!'">
+    ¡Tócame para cambiar el contenido HTML!
+</button>
+
+<h2>¿Qué puede hacer JavaScript cambiando atributos HTML?</h2>
+<p>JavaScript puede cambiar los valores de los atributos HTML.</p>
+<p>En este caso, JavaScript cambia el valor del atributo `src` (source) de una imagen.</p>
+<button onclick="document.getElementById('myImage').src='https://media.tenor.com/IA3BZo901u4AAAAd/light-bulb-go-off.gif'">
+    ENCIENDE LA LUZ
+</button>
+<img id="myImage" src="https://media.tenor.com/v1Rr5AUVH_YAAAAj/lampard.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='https://media.tenor.com/v1Rr5AUVH_YAAAAj/lampard.gif'">
+    APAGA LA LUZ
+</button>
+
+<h2>Cambiar el estilo de un elemento</h2>
+<p id="styleDemo">JavaScript puede cambiar el estilo de un elemento en HTML.</p>
+<button type="button" onclick="document.getElementById('styleDemo').style.fontSize='35px'">
+    ¡Haz clic para cambiar el tamaño del texto!
+</button>
+
+<h2>Ocultar un elemento</h2>
+<p id="hideDemo">JavaScript puede ocultar elementos en HTML.</p>
+<button type="button" onclick="document.getElementById('hideDemo').style.display='none'">
+    ¡Haz clic para ocultar este texto!
+</button>
+
+</body>
+</html>

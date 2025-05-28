@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JUGUEMOS CON LOS BOTONES</title>
+</head>
+
+<body>
+
+    <h2>JUGUEMOS CON LOS BOTONES</h2>
+    <button type="button" onclick="document.getElementById('dateDemo').innerHTML = Date()">
+        Tocame para ver la fecha y hora de hoy.
+    </button>
+    <p id="dateDemo"></p>
+
+    <h2> Es fácil intentalo </h2>
+    <p id="contentDemo">ver como cambia.</p>
+    <button type="button" onclick="document.getElementById('contentDemo').innerHTML = 'HOLA!'">
+        ¡Tócame para cambiar !
+    </button>
+
+    <h2>Ahora juega con el bombillo </h2>
+    <p>Enciene y apaga la LUZ.</p>
+    <button
+        onclick="document.getElementById('myImage').src='https://media.tenor.com/IA3BZo901u4AAAAd/light-bulb-go-off.gif'">
+        ENCIENDE LA LUZ
+    </button>
+    <img id="myImage" src="https://media.tenor.com/v1Rr5AUVH_YAAAAj/lampard.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='https://media.tenor.com/v1Rr5AUVH_YAAAAj/lampard.gif'">
+        APAGA LA LUZ
+    </button>
+    
+    <h2>Cambiar el tamaño de letra</h2>
+    <p id="styleDemo">Viste como cambia de tamaño<option value=""></option>.</p>
+    <button type="button" onclick="document.getElementById('styleDemo').style.fontSize='35px'">
+        ¡Haz clic para cambiar el tamaño del texto!
+    </button>
+
+    <h2>! Es magia en la página ¡</h2>
+    <p id="hideDemo">Se oculta el texto con solo un toque.</p>
+    <button type="button" onclick="document.getElementById('hideDemo').style.display='none'">
+        ¡Tocame para ocultar el texto!
+    </button>
+</body>
+
+</html>
